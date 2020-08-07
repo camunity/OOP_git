@@ -5,8 +5,13 @@ Hold information about each Task created by the user
 """
 
 class Task:
-    def __init__(self):
-        pass
+        ### Data Object
+    def __init__(self, name, task_id):
+        self.name = name
+        self.id = task_id
+
+    def __str__(self):
+        return f"ID: {self.id}, Name: {self.name}"
 
 
 
